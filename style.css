@@ -1188,6 +1188,14 @@ footer{
   position: relative;
   top:50px;
 }
+.list_two{
+position: relative;
+top: 50px;
+}
+.list_three{
+position: relative;
+top: 50px;
+}
 html{
   background-image: url("https://wallpapers.com/images/featured/dark-5u7v1sbwoi6hdzsb.jpg");
   background-size:cover;
