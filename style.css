@@ -1,382 +1,349 @@
-/* Global Reset */
+/* RESET & BASE */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
 }
-
 body {
-  background-color: #000;
+  font-family: 'Poppins', sans-serif;
+  background: #000;
   color: #fff;
-  line-height: 1.6;
-}
-
-html {
   scroll-behavior: smooth;
 }
 
-/* Top Navigation */
+/* NAVBAR */
 .topnav {
   background-color: #333;
-  overflow: hidden;
+  height: 50px;
+  width: 100%;
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 50px;
   z-index: 999;
   display: flex;
   align-items: center;
-  padding: 0 20px;
+  justify-content: flex-start;
+  padding: 0 15px;
 }
-
 .topnav a {
   color: #f2f2f2;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
 }
-
 .topnav a:hover {
   background-color: #555;
   color: white;
 }
-
 .topnav a.active {
   background-color: #0f4551;
   color: white;
 }
-
-.topnav input[type="text"] {
+.Search {
   margin-left: auto;
   padding: 6px;
-  font-size: 17px;
-  border: none;
-  border-radius: 4px;
-  outline: none;
+  font-size: 16px;
 }
-
 .btn_one {
   margin-left: 15px;
-  cursor: pointer;
 }
-
 .btn_one i {
   font-size: 24px;
   color: white;
+  cursor: pointer;
 }
 
-/* Sidebar Menu */
+/* SIDEBAR */
 #check {
   display: none;
 }
-
 .sidebar_menu {
   position: fixed;
-  left: -100%;
   top: 0;
-  width: 300px;
+  left: -100%;
+  width: 250px;
   height: 100vh;
-  background: #111;
-  padding: 20px;
-  transition: 0.5s;
+  background-color: #111;
   z-index: 9999;
+  padding: 20px;
+  transition: 0.4s ease;
 }
-
 #check:checked ~ .sidebar_menu {
   left: 0;
 }
-
 .sidebar_menu .logo a {
   font-size: 22px;
+  font-weight: bold;
   color: white;
   text-decoration: none;
-  font-weight: bold;
 }
-
 .sidebar_menu .btn_two {
-  margin-top: 20px;
+  margin-top: 15px;
 }
-
+.sidebar_menu .btn_two i {
+  font-size: 24px;
+  color: grey;
+  cursor: pointer;
+}
 .sidebar_menu .menu ul {
   list-style: none;
-  padding: 0;
-  margin: 30px 0;
+  margin-top: 30px;
 }
-
 .sidebar_menu .menu li {
-  padding: 12px 0;
+  padding: 10px 0;
 }
-
+.sidebar_menu .menu i,
 .sidebar_menu .menu a {
-  color: #eee;
+  color: #ccc;
   text-decoration: none;
+  font-size: 18px;
 }
-
-.sidebar_menu .social_media a {
+.sidebar_menu .menu i {
   margin-right: 10px;
-  color: #aaa;
-  font-size: 20px;
-  transition: 0.3s;
 }
-
+.sidebar_menu .social_media {
+  margin-top: 30px;
+}
+.sidebar_menu .social_media a {
+  color: #888;
+  margin-right: 10px;
+  font-size: 20px;
+}
 .sidebar_menu .social_media a:hover {
   color: #fff;
 }
 
-/* Hero Section */
+/* HERO SECTION */
 .main_box {
-  background: url("photography.jpg") no-repeat center center/cover;
   height: 100vh;
+  background: url('photography.jpg') no-repeat center center/cover;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
   padding-top: 50px;
   text-align: center;
 }
-
-.logo-img {
+.shotlogo {
   height: 100px;
-  border-radius: 12px;
+  width: 130px;
+  border-radius: 10px;
   margin-bottom: 20px;
 }
-
-.main-heading {
-  font-family: 'Foldit', sans-serif;
-  color: mediumaquamarine;
+.shot {
   font-size: 60px;
-  margin: 20px 0;
+  color: mediumaquamarine;
+  font-family: 'Foldit', cursive;
+  margin-bottom: 20px;
 }
-
-.intro-text {
-  color: whitesmoke;
+.intro {
+  color: #eee;
   font-size: 18px;
-  padding: 0 10px;
+  max-width: 800px;
+  line-height: 1.6;
 }
 
-/* Our Work Section */
+/* OUR WORK */
 .our-work {
-  padding: 80px 20px 30px;
+  padding: 50px 20px;
   text-align: center;
   background: #111;
 }
-
-.our-work h2 {
+.peter {
+  font-size: 26px;
   color: #ff9933;
-  font-size: 32px;
+  margin-bottom: 10px;
 }
-
-.our-work .description {
-  margin-top: 10px;
+.meet {
   font-size: 16px;
+  color: white;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.7;
 }
 
-/* Cards Section */
+/* CARDS */
 .cards-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 30px;
-  padding: 60px 20px;
+  gap: 25px;
+  padding: 40px 20px;
   background: #000;
 }
-
 .card {
-  width: 280px;
+  width: 260px;
   border-radius: 20px;
   overflow: hidden;
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+  background: #222;
   transition: transform 0.3s ease;
 }
-
 .card:hover {
   transform: scale(1.05);
 }
-
 .card_image img {
   width: 100%;
-  height: 250px;
+  height: 200px;
   object-fit: cover;
 }
-
 .card_title p {
   text-align: center;
-  font-size: 20px;
-  font-weight: bold;
   padding: 10px;
-  background: #111;
+  font-size: 18px;
+  color: #fff;
 }
 
-/* Feature Cards */
-.feature-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  padding: 60px 20px;
-  background: #111;
-}
-
-.feature-card {
-  width: 220px;
-  height: 300px;
-  background-size: cover;
-  background-position: center;
-  border-radius: 12px;
-  position: relative;
-  box-shadow: 0 0 15px rgba(0,0,0,0.5);
-}
-
-.feature-card h3 {
-  position: absolute;
-  bottom: 0;
-  background: rgba(0,0,0,0.6);
-  width: 100%;
-  text-align: center;
-  color: white;
-  font-size: 20px;
-  padding: 10px 0;
-}
-
-/* Bio Section */
+/* PROFILE IMAGE & BIO */
 .bio-section {
-  display: flex;
-  flex-wrap: wrap;
   padding: 60px 20px;
-  background: #222;
-  align-items: center;
-  justify-content: center;
-  gap: 40px;
+  background: url('https://media.istockphoto.com/id/1281041623/vector/studio-room-background.jpg') no-repeat center center/cover;
   text-align: center;
 }
-
-.bio-image img {
-  width: 250px;
-  height: 300px;
-  border-radius: 10px;
+.image-area {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.img-wrapper {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  overflow: hidden;
+}
+.img-wrapper img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   filter: grayscale(100%);
   transition: 0.5s;
 }
-
-.bio-image img:hover {
+.img-wrapper img:hover {
   filter: grayscale(0%);
+  transform: scale(1.1);
 }
-
-.bio-social {
-  margin-top: 10px;
-}
-
-.bio-social a {
-  color: tomato;
-  margin: 0 8px;
-  font-size: 22px;
-  transition: 0.3s;
-}
-
-.bio-social a:hover {
+.img-wrapper h2 {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: tomato;
   color: white;
+  font-size: 20px;
+  padding: 10px;
 }
-
-.bio-content h2 {
+.img-wrapper ul {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: flex;
+  gap: 10px;
+}
+.img-wrapper ul li {
+  list-style: none;
+}
+.img-wrapper ul li a {
+  color: tomato;
+  font-size: 20px;
+}
+.siddhu {
+  font-size: 24px;
   color: wheat;
-  font-size: 26px;
-  margin-bottom: 10px;
+  margin-top: 20px;
 }
 
-.bio-content p {
-  max-width: 500px;
-  font-size: 16px;
-}
-
-/* Booking Section */
+/* BOOKING SECTION */
 .booking-section {
   background: #111;
   padding: 60px 20px;
   text-align: center;
 }
-
 .booking-section h2 {
   color: wheat;
   font-size: 24px;
   margin-bottom: 10px;
 }
-
 .booking-section p {
-  color: white;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  color: #eee;
 }
-
 .booking-section ol {
-  list-style: decimal inside;
   text-align: left;
   max-width: 600px;
-  margin: 0 auto;
+  margin: 0 auto 20px;
 }
-
 .booking-section li {
-  margin-bottom: 10px;
+  margin-bottom: 12px;
+  font-size: 16px;
+}
+.booking-section h4 {
+  margin-top: 20px;
+  font-size: 18px;
+}
+.booking-section strong {
+  color: #fff;
 }
 
-/* Footer */
+/* FOOTER */
 footer {
   background: #000;
   padding: 40px 20px 20px;
-  text-align: center;
   color: white;
 }
-
 .footer-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
-  margin-bottom: 20px;
   gap: 30px;
+  margin-bottom: 20px;
 }
-
 .footer-logo img {
   height: 80px;
   border-radius: 10px;
 }
-
-.footer-links,
-.footer-social {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+.footer-links ul,
+.footer-social ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
-
+.footer-links li,
+.footer-social li {
+  margin-bottom: 8px;
+}
 .footer-links a,
 .footer-social a {
-  color: white;
+  color: #eee;
   text-decoration: none;
+  font-size: 16px;
 }
-
 .footer-bottom {
+  text-align: center;
   border-top: 1px solid #444;
   padding-top: 10px;
   font-size: 14px;
   color: #aaa;
 }
 
+/* RESPONSIVE */
 @media screen and (max-width: 768px) {
-  .main-heading {
-    font-size: 40px;
+  .main_box {
+    padding-top: 80px;
   }
-
-  .intro-text {
+  .shot {
+    font-size: 36px;
+  }
+  .intro {
     font-size: 16px;
+    padding: 0 10px;
   }
-
-  .feature-container {
+  .cards-list {
     flex-direction: column;
     align-items: center;
   }
-
   .footer-container {
     flex-direction: column;
     align-items: center;
+    gap: 20px;
   }
 }
