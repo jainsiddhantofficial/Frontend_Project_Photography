@@ -4,30 +4,31 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Siddhant Shots</title>
+
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Foldit&display=swap" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+
+  <!-- CSS -->
   <link rel="stylesheet" href="style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Foldit&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
 </head>
 <body>
 
-  <!-- Navigation -->
+  <!-- NAVIGATION -->
   <div class="topnav" id="myTopnav">
     <a href="#home" class="active">Home</a>
     <a href="#portfolio">Our Work</a>
     <a href="#booking">Book Us</a>
     <a href="#about">About</a>
-    <input type="text" placeholder="Search.." class="Search">
+    <input type="text" placeholder="Search.." class="Search"/>
     <div class="btn_one">
       <label for="check"><i class="fa-solid fa-bars"></i></label>
     </div>
   </div>
 
-  <!-- Sidebar -->
+  <!-- SIDEBAR -->
   <input type="checkbox" id="check" />
   <div class="sidebar_menu">
     <div class="logo"><a href="#">Siddhant Shots</a></div>
@@ -51,87 +52,103 @@
     </div>
   </div>
 
-  <!-- Hero Section -->
-  <section class="main_box">
-    <div class="intro-area">
-      <img src="siddhantshots.png" alt="Logo" class="logo-img">
-      <h1 class="main-heading">SIDDHANT SHOTS</h1>
-      <p class="intro-text">Welcome to Siddhant Shots, where moments come to life through the lens!<br> We believe in the power of photography to capture emotions, tell stories, and freeze time.<br> Explore our portfolio and join us on a visual journey.</p>
+  <!-- HERO SECTION -->
+  <section class="main_box" id="home">
+    <img src="siddhantshots.png" class="shotlogo" alt="logo"/>
+    <h1 class="shot">SIDDHANT SHOTS</h1>
+    <p class="intro">Welcome to Siddhant Shots,<br> where moments come to life through the lens!<br> We believe in the power of photography to capture emotions,<br> tell stories, and freeze time.<br> Explore our portfolio and join us on a visual journey.</p>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section class="our-work" id="portfolio">
+    <h2 class="peter"><u>'OUR WORK'</u></h2>
+    <p class="meet">
+      Meet Siddhant, the creative force behind Siddhant Shots.<br>
+      A passionate photographer with an eye for detail and a knack for capturing the extraordinary in the ordinary.<br>
+      Learn more about the person behind the lens and the inspiration that fuels Siddhant Shots.
+    </p>
+  </section>
+
+  <!-- IMAGE CARDS -->
+  <section class="cards-list">
+    <div class="card">
+      <div class="card_image"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtKMypsHBVKzMpJImiGCCQTTgVzZ3GMVCgjA&usqp=CAU"/></div>
+      <div class="card_title title-white"><p>Scenery</p></div>
+    </div>
+    <div class="card">
+      <div class="card_image"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRU6Qysit37RnfdeyiHjKNwU9K7L0tnIgcPMA&usqp=CAU"/></div>
+      <div class="card_title title-black"><p>Candids</p></div>
+    </div>
+    <div class="card">
+      <div class="card_image"><img src="https://etimg.etb2bimg.com/photo/74645840.cms"/></div>
+      <div class="card_title title-black"><p>Ad Shoots</p></div>
+    </div>
+    <div class="card">
+      <div class="card_image"><img src="https://images.unsplash.com/photo-1620122303020-87ec826cf70d?q=80"/></div>
+      <div class="card_title title-white"><p>Portraits</p></div>
     </div>
   </section>
 
-  <!-- Our Work Section -->
-  <section class="our-work" id="portfolio">
-    <h2>'OUR WORK'</h2>
-    <p class="description">Meet Siddhant, the creative force behind Siddhant Shots — a passionate photographer with an eye for detail and a knack for storytelling through visuals.</p>
-  </section>
-
-  <!-- Portfolio Cards -->
-  <section class="cards-list">
-    <div class="card"><div class="card_image"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtKMypsHBVKzMpJImiGCCQTTgVzZ3GMVCgjA&usqp=CAU"></div><div class="card_title title-white"><p>Scenery</p></div></div>
-    <div class="card"><div class="card_image"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRU6Qysit37RnfdeyiHjKNwU9K7L0tnIgcPMA&usqp=CAU"></div><div class="card_title title-black"><p>Candids</p></div></div>
-    <div class="card"><div class="card_image"><img src="https://etimg.etb2bimg.com/photo/74645840.cms"></div><div class="card_title title-black"><p>Ad Shoots</p></div></div>
-    <div class="card"><div class="card_image"><img src="https://images.unsplash.com/photo-1620122303020-87ec826cf70d?q=80&w=1000"></div><div class="card_title title-white"><p>Portraits</p></div></div>
-  </section>
-
-  <!-- Feature Cards -->
-  <section class="feature-container">
-    <div class="feature-card" style="background-image: url('https://expertphotography.b-cdn.net/wp-content/uploads/2020/07/social-media-for-photographers-follow-1.jpg')"><h3>Photography</h3></div>
-    <div class="feature-card" style="background-image: url('https://anilevents.in/wp-content/uploads/2020/01/Videography.jpg')"><h3>Videography</h3></div>
-    <div class="feature-card" style="background-image: url('https://www.behindwoods.com/model-men/mohammed-anwar/mohammed-anwar-models-stills-photos-pictures-01.jpg')"><h3>Stills</h3></div>
-    <div class="feature-card" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWYW3eaHIt6UHCBqJaBgTInK471O3x0HUqGA&usqp=CAU')"><h3>Boomerangs</h3></div>
-  </section>
-
-  <!-- Bio Section -->
+  <!-- PROFILE SECTION -->
   <section class="bio-section" id="about">
-    <div class="bio-image">
-      <img src="Siddhant_Jain.jpg" alt="Siddhant Jain">
-      <h2>Siddhant Jain</h2>
-      <div class="bio-social">
-        <a href="https://github.com/jainsiddhantofficial"><i class="fab fa-github"></i></a>
-        <a href="https://www.instagram.com/jainsiddhantofficial"><i class="fab fa-instagram"></i></a>
-        <a href="https://twitter.com/JainSiddhant777"><i class="fab fa-twitter"></i></a>
-        <a href="https://www.youtube.com/@JainSiddhantofficial"><i class="fab fa-youtube"></i></a>
+    <div class="image-area">
+      <div class="img-wrapper">
+        <img src="Siddhant_Jain.jpg" alt="Siddhant Jain"/>
+        <h2>Siddhant Jain</h2>
+        <ul>
+          <li><a href="https://github.com/jainsiddhantofficial"><i class="fab fa-github"></i></a></li>
+          <li><a href="https://www.instagram.com/jainsiddhantofficial"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="https://twitter.com/JainSiddhant777"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="https://www.youtube.com/@JainSiddhantofficial"><i class="fab fa-youtube"></i></a></li>
+        </ul>
       </div>
     </div>
-    <div class="bio-content">
-      <h2>Behind the Lens - Siddhant's Story</h2>
-      <p>Siddhant Shots is not just about capturing images — it's about crafting visual stories that resonate with the heart. Join us on a journey to freeze moments, unveil personalities, and showcase the beauty of the world through our lens.</p>
-    </div>
+    <h2 class="siddhu"><u>Behind the Lens - Siddhant's Story</u></h2>
+    <p class="meet">Siddhant Shots is not just about capturing images — it's about crafting visual stories that resonate with the heart.</p>
   </section>
 
-  <!-- Booking Section -->
+  <!-- BOOKING SECTION -->
   <section class="booking-section" id="booking">
-    <h2>Book an Unforgettable Session with Siddhant Shots 📸</h2>
-    <p>Are you ready to turn your moments into timeless memories? Book now and let’s create magic together.</p>
+    <h2><u>Book an Unforgettable Session with Siddhant Shots 📸</u></h2>
+    <p>
+      Are you ready to turn your moments into timeless memories?<br>
+      Booking a session with Siddhant Shots is your first step towards capturing your story through our lens.
+    </p>
     <ol>
-      <li><strong>Explore Portfolio:</strong> Discover our diverse styles.</li>
+      <li><strong>Explore Portfolio:</strong> Discover our diverse style – portraits to landscapes.</li>
       <li><strong>Contact Us:</strong> Email at siddhantshots@gmail.com</li>
-      <li><strong>Customize Your Session:</strong> Personalized consultation</li>
-      <li><strong>Confirm & Capture:</strong> Secure your date & relax</li>
+      <li><strong>Customize Your Session:</strong> Tailor your experience with a personal consultation.</li>
+      <li><strong>Confirm & Capture:</strong> Secure your date with a small deposit and relax!</li>
     </ol>
+    <h4>Ready to Capture Your Story?!</h4>
+    <p>Contact us to book your session with Siddhant Shots. Let's create memories together! 🌟</p>
   </section>
 
-  <!-- Footer -->
+  <!-- FOOTER -->
   <footer>
     <div class="footer-container">
-      <div class="footer-logo"><img src="siddhantshots.png" alt="Logo"></div>
+      <div class="footer-logo">
+        <img src="siddhantshots.png" alt="Logo"/>
+      </div>
       <div class="footer-links">
-        <a href="#portfolio">Portfolio</a>
-        <a href="#about">About</a>
-        <a href="#booking">Book Us</a>
+        <ul>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#booking">Book</a></li>
+        </ul>
       </div>
       <div class="footer-social">
-        <h4>Connect With Us</h4>
-        <p>📞 9557597660</p>
-        <div class="icons">
-          <a href="https://www.instagram.com/jainsiddhantofficial"><i class="fab fa-instagram"></i></a>
-          <a href="https://twitter.com/JainSiddhant777"><i class="fab fa-twitter"></i></a>
-          <a href="https://www.youtube.com/@JainSiddhantofficial"><i class="fab fa-youtube"></i></a>
-        </div>
+        <h3><u><b>Connect With Us</b></u><br>📞 9557597660</h3>
+        <ul>
+          <li><a href="https://www.instagram.com/jainsiddhantofficial"><i class="fab fa-facebook-f"></i></a></li>
+          <li><a href="https://twitter.com/JainSiddhant777"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="https://www.instagram.com/jainsiddhantofficial"><i class="fab fa-instagram"></i></a></li>
+        </ul>
       </div>
     </div>
-    <p class="footer-bottom">© 2025 Siddhant Shots. All rights reserved. | Website by JainSiddhantOfficial</p>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Siddhant Shots. All rights reserved. | Website by JainSiddhantOfficial</p>
+    </div>
   </footer>
 
 </body>
